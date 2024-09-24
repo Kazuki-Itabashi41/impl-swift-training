@@ -12,7 +12,7 @@ TODO: swift 用のやつに修正
 
 ## Swift とは
 
-かずき
+[swift とは](/impl-swift-training/READMES/swiftとは/)
 
 ## 環境構築
 
