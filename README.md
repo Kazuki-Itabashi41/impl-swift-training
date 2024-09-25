@@ -2,25 +2,25 @@
 
 # はじめに
 
-TODO: swift 用のやつに修正
-皆さんには、これからいくつかのカリキュラムを進めていただきます。
+TODO: swift 用のやつに修正  
+皆さんには、これからいくつかのカリキュラムを進めていただきます。  
 終了時には「swift の案件に参画できる基礎スキル」が身につくようなカリキュラムを用意しています。
 
 まずはこちらのリンクをご覧ください。
 
-[はじめに](/impl-swift-training//READMES/はじめに/)
+[はじめに](../impl-swift-training/READMES/はじめに/README.md)
 
 ## Swift とは
 
-[swift とは](/impl-swift-training/READMES/swiftとは/)
+[swift とは](../impl-swift-training/READMES/swiftとは/README.md)
 
 ## 環境構築
 
-[環境構築](/impl-swift-training/READMES/環境構築/)
+[環境構築](../impl-swift-training/READMES/環境構築/README.md)
 
 ## ファイル構成
 
-[ファイル構成](/impl-swift-training/READMES/ファイル構成/)
+[ファイル構成](../impl-swift-training/READMES/ファイル構成/README.md)
 
 ## 基礎構文
 
