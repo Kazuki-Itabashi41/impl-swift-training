@@ -20,6 +20,8 @@ TODO: swift 用のやつに修正
 
 ## ファイル構成
 
+[ファイル構成](/impl-swift-training/READMES/ファイル構成/)
+
 ## 基礎構文
 
 オプショナル
