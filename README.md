@@ -1,6 +1,6 @@
 # impl-swit-training
 
-# はじめに
+## はじめに
 
 TODO: swift 用のやつに修正  
 皆さんには、これからいくつかのカリキュラムを進めていただきます。  
@@ -8,19 +8,19 @@ TODO: swift 用のやつに修正
 
 まずはこちらのリンクをご覧ください。
 
-[はじめに](../impl-swift-training/READMES/はじめに/README.md)
+[はじめに](./READMES/はじめに/README.md)
 
 ## Swift とは
 
-[swift とは](../impl-swift-training/READMES/swiftとは/README.md)
+[swift とは](./READMES/swiftとは/README.md)
 
 ## 環境構築
 
-[環境構築](../impl-swift-training/READMES/環境構築/README.md)
+[環境構築](./READMES/環境構築/README.md)
 
 ## ファイル構成
 
-[ファイル構成](../impl-swift-training/READMES/ファイル構成/README.md)
+[ファイル構成](./READMES/ファイル構成/README.md)
 
 ## 基礎構文
 
