@@ -24,3 +24,5 @@ let a: Int? = 1
 let b: Int? = 2
 a + b  //コンパイルエラーとなる
 ```
+
+Optinal&lt;Wrapped&gt;
