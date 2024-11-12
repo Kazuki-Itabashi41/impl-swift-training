@@ -115,3 +115,37 @@ a + b //コンパイルエラー
 Any型は便利ですが操作の幅を狭めてしまうため、可能な限り型の情報を保つことが望ましいです。
 
 ## タプル型
+タプル型とは、複数の型をまとめて一つの型として扱う型です。  
+定義方法は、(型名1, 型名2, 型名3, ...)のように定義します。  
+例) Int型とString型をまとめたもの
+```Swift
+var tuple: (Int, String)
+```
+値の代入
+```Swift
+var tuple: (Int, String)
+tuple = (1, "hoge")
+```
+
+### 要素へのアクセス
+- インデックスによるアクセス  
+タプルの要素にはインデックスを通じてアクセスできます。
+```Swift
+let tuple = (1, "hoge")
+let int = tuple.0 //1
+let string = tuple.1 //"hoge"
+```
+
+- 要素名によるアクセス  
+タプルの定義時に各要素に要素名をつけ、その名前を通じて要素にアクセスすることもできます。
+```Swift
+let tuple = (int: 1, string: "hoge")
+let int = tuple.int //1
+let string = tuple.string //"hoge"
+```
+また、複数の変数や定数を同時に宣言することもできます。
+```Swift
+let (int, string) = (1, "hoge")
+int //1
+string //"hoge"
+```
