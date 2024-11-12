@@ -19,10 +19,81 @@ Optinal&lt;Wrapped&gt;型にはWrapped?と表記するシンタックスシュ�
 Optinal&lt;Wrapped&gt;型は値を持っていない可能性があるため(nilを許容しているため)、Wrapped型の変数などと同様に扱うことができません。
 例えば、Int?型同士の四則演算はコンパイルエラーとなります。
 ```Swift
-//委譲先クラス
 let a: Int? = 1
 let b: Int? = 2
 a + b  //コンパイルエラーとなる
 ```
 
-Optinal&lt;Wrapped&gt;
+そのため、Wrapped型の変数などと同様に扱うためにはOptinal&lt;Wrapped&gt;型からWrapped型の値を取り出す必要があります。このことをアンラップといいます。
+
+アンラップには下記の3つの方法があります。
+
+- オプショナルバインディング
+- ??演算子
+- 強制アンラップ
+
+#### オプショナルバインディング
+
+```Swift
+if let hoge = Optinal<Wrapped&>型の値 {
+    //ここに値が存在するときの処理を書く(Optinal<Wrapped&>型がnilではない)
+}
+```
+
+このように、値がnilではないことが条件としてWrapped型の値を取り出し処理することができます。
+
+- 例
+```Swift
+let hoge: String? = "test"
+print(type(of: hoge))
+// 実行結果 Optional<String>
+
+if let unwrappedString = hoge {
+    print(type(of: unwrappedString))
+    //実行結果　String
+}
+```
+
+上記では、String?型を定義し、if-letを用いてアンラップすることでString型を取り出しています。
+
+また、類似の構文としてguard-let文があります。
+
+```Swift
+let hoge: String? = "test"
+print(type(of: hoge))
+// 実行結果 Optional<String>
+
+guard let unwrappedString = hoge else {return}
+print(type(of: unwrappedString))
+//実行結果 String
+```
+
+こちらのguard-let文では、値がnilだったらreturn、存在するなら後続の処理を実行するという処理になっています。  
+ケースによって使い分けてみてください。
+
+#### ??演算子
+
+中値演算子??を使用することで値が存在しない場合のデフォルトの値を指定することができます。
+```Swift
+let hoge: String? = "test"
+let unwrappedString = hoge ?? "nilです" // hogeがnilの場合は"nilです"となる
+print(unwrappedString)
+//実行結果　"test"
+```
+nilの場合は右辺の値が入ります。
+```Swift
+let hoge: String? = nil
+let unwrappedString = hoge ?? "nilです" // hogeがnilの場合は"nilです"となる
+print(unwrappedString)
+//実行結果　"nilです"
+```
+
+#### 強制アンラップ
+強制アンラップを行うには、!を使用します。
+```Swift
+let a: Int? = 1
+let b: Int? = 2
+a! + b!  //3
+```
+強制アンラップは値がnilの場合エラーとなってしまうので、極力使用を避けるのがおすすめです。
+
