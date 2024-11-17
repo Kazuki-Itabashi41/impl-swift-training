@@ -160,3 +160,82 @@ int //1
 string //"hoge"
 ```
 
+## Array&lt;Element&gt;型
+Array&lt;Element&gt;型は順序を持った配列で、[1,2,3]のように表現できます。
+また、配列がString型しかないときは[String]型、Int型しかないときは[Int]型と推論されます。
+```Swift
+let a = [1,2,3] //[Int]型
+let b = ["a", "b", "c"] //[String]型
+```
+
+空の配列の場合、要素が存在しないため型推論が行えません。そのため、明示してあげる必要があります。
+```Swift
+let array: [Int] = []
+```
+配列内に複数の型が含まれる場合はAny型として定義します。
+```Swift
+let array: [Any] = [1, "hoge"]
+```
+また、[[Int]]のように配列を要素に持つ配列を二次元配列と呼びます。
+```Swift
+let array: [[Int]] = [[1,2], [3,4], [5,6]]
+```
+
+### Array&lt;Element&gt;型の操作
+- 要素へのアクセス  
+  配列の先頭を0として、0番目,1番目といったようにアクセスします。  
+  インデックスが範囲外の場合エラーとなるため気をつけてください。
+```Swift
+let array: [String] = ["a", "b", "c"]
+
+let string1 = array[0] // "a"
+let string2 = array[1] // "b"
+let string3 = array[2] // "c"
+let string4 = array[3] // 範囲外のためエラー
+```
+
+- 要素の更新、追加、結合、削除 
+   
+更新
+```Swift
+let array: [String] = ["a", "b", "c"]
+array[0] = "d"
+array // ["d", "b", "c"]
+```
+
+末尾への追加
+```Swift
+let array: [String] = ["a", "b", "c"]
+array.append("d")
+array // ["a", "b", "c", "d"]
+```
+
+任意の位置への追加
+```Swift
+let array: [String] = ["a", "b", "d"]
+array.insert("c", at: 2) //2なのでcが3番目になるよう追加されている
+array // ["a", "b", "c", "d"]
+```
+
+結合
+型が一致する場合、+演算子で結合できます。
+```Swift
+let array1: [String] = ["a", "b", "c"]
+let array2: [String] = ["d", "e", "f"]
+let res = array1 + array2
+res // ["a", "b", "c", "d", "e", "f"]
+```
+
+削除
+```Swift
+let array: [String] = ["a", "b", "c", "d", "e", "f"]
+array.remove(at: 1) // 任意のインデックスを削除
+array // ["a", "c", "d", "e", "f"]
+
+array.removeLast() //末尾の要素を削除
+array //["a", "c", "d", "e"]
+
+array.removeAll() //すべての要素を削除
+array // []
+
+```
