@@ -143,9 +143,20 @@ let tuple = (int: 1, string: "hoge")
 let int = tuple.int //1
 let string = tuple.string //"hoge"
 ```
-また、複数の変数や定数を同時に宣言することもできます。
+
+- 代入によるアクセス  
+  ()内に区切りで列挙された変数や定数に代入することができます。
+```Swift
+let int: Int
+let string: String
+(int, string) = (1, "hoge")
+int //1
+string //"hoge"
+```
+また、()内で複数の変数や定数を同時に宣言することもできます。
 ```Swift
 let (int, string) = (1, "hoge")
 int //1
 string //"hoge"
 ```
+
