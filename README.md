@@ -31,9 +31,13 @@ protocol
 
 ## アプリの制御
 
-ライフサイクル
-Notification
-UserDefaults
+[アプリのライフサイクル](./READMES/アプリの制御/アプリのライフサイクル/README.md)
+
+[UIViewController のライフサイクル](<./READMES/アプリの制御/UIViewControllerのライフサイクル(Uikit)/README.md>)
+
+[イベント](./READMES/アプリの制御/イベント/README.md)
+
+[値を保持する](./READMES/アプリの制御/値を保持する/README.md)
 
 ## UI 構築
 
@@ -56,8 +60,7 @@ UserDefaults
 
 ## 非同期処理
 
-delegate
-田口
+[Delegate](./READMES/非同期処理/Delegate/README.md)
 
 ## テスト
 
