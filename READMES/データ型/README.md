@@ -239,3 +239,40 @@ array.removeAll() //すべての要素を削除
 array // []
 
 ```
+## Dictionary&lt;Key,Value&gt;型
+辞書を表すDictionary&lt;Key,Value&gt;型は、キーと値のペアを持つコレクションであり、キーを基に値にアクセスする用途で使用します。  
+キーは一意でなければなりませんが、値は他のものと重複しても問題ないです。
+
+### 値へのアクセス
+```Swift
+let dic = ["key", 1] //[String : Int]型
+let value = dic["key"] // 1 (Optional<Int>型)
+let value2 = dic["key2"] //nil
+```
+
+辞書型はArray型とは異なり、存在しない値にアクセスしようとしてもエラーにはならず、nilが返ってきます。そのため、返ってくる値の型はOptional&lt;Value&gt;型となります。
+
+### 値の更新、追加、削除
+サブスクリプトの引数にKey型の値を設定し、=を用いて更新します  
+指定したkeyがすでに存在する場合は値の更新、存在しない場合は値の追加、valueにnilを設定した場合は値の削除となります。
+
+- 更新
+```Swift
+let dic = ["key", 1]
+dic["key"] = 2
+dic // ["key" : 2]
+```
+
+- 追加
+```Swift
+let dic = ["key1", 1]
+dic["key2"] = 2
+dic // ["key1" : 1, "key2" : 2]
+```
+
+- 削除
+```Swift
+let dic = ["key", 1]
+dic["key"] = nil
+dic // [:]
+```
