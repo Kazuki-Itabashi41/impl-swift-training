@@ -17,6 +17,7 @@
 		306E380D2CA2D21A00E28041 /* impl_swift_trainigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E380C2CA2D21A00E28041 /* impl_swift_trainigTests.swift */; };
 		306E38172CA2D21A00E28041 /* impl_swift_trainigUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E38162CA2D21A00E28041 /* impl_swift_trainigUITests.swift */; };
 		306E38192CA2D21A00E28041 /* impl_swift_trainigUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E38182CA2D21A00E28041 /* impl_swift_trainigUITestsLaunchTests.swift */; };
+		30C78C8B2CEF9B22001063C9 /* TaskNo1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C78C8A2CEF9B22001063C9 /* TaskNo1.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		306E38122CA2D21A00E28041 /* impl-swift-trainigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "impl-swift-trainigUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		306E38162CA2D21A00E28041 /* impl_swift_trainigUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = impl_swift_trainigUITests.swift; sourceTree = "<group>"; };
 		306E38182CA2D21A00E28041 /* impl_swift_trainigUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = impl_swift_trainigUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30C78C8A2CEF9B22001063C9 /* TaskNo1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskNo1.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		306E37F12CA2D21800E28041 /* impl-swift-trainig */ = {
 			isa = PBXGroup;
 			children = (
+				30C78C892CEF9AD5001063C9 /* AutoLayoutTasks */,
 				306E37F22CA2D21800E28041 /* AppDelegate.swift */,
 				306E37F42CA2D21800E28041 /* SceneDelegate.swift */,
 				306E37F62CA2D21800E28041 /* ViewController.swift */,
@@ -128,6 +131,14 @@
 				306E38182CA2D21A00E28041 /* impl_swift_trainigUITestsLaunchTests.swift */,
 			);
 			path = "impl-swift-trainigUITests";
+			sourceTree = "<group>";
+		};
+		30C78C892CEF9AD5001063C9 /* AutoLayoutTasks */ = {
+			isa = PBXGroup;
+			children = (
+				30C78C8A2CEF9B22001063C9 /* TaskNo1.storyboard */,
+			);
+			path = AutoLayoutTasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			files = (
 				306E38022CA2D21A00E28041 /* LaunchScreen.storyboard in Resources */,
 				306E37FF2CA2D21A00E28041 /* Assets.xcassets in Resources */,
+				30C78C8B2CEF9B22001063C9 /* TaskNo1.storyboard in Resources */,
 				306E37FA2CA2D21800E28041 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
