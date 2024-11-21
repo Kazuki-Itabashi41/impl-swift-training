@@ -11,4 +11,4 @@ Xcode のインストールが完了していること
 ## ディレクトリをクローンする
 
 下記ディレクトリをクローンしてください。
-[App](/impl-swift-training/App/)
+`impl-swift-training/App`
