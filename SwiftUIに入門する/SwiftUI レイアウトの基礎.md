@@ -1,12 +1,15 @@
-SwiftUIでは、Stackをベースにしてビューを積み重ねる手法が便利に使用できます。
-他にも色々ありますが、一旦Stackを覚えておけば、一通りのレイアウトを簡単に構築できるでしょう。
+SwiftUIは、宣言的なUIフレームワークです。
+なので、あたかもブロックを積み上げるかのような感覚でUIを構築することができます。
 
 ##  VStack, HStack, ZStack
+SwiftUIで実装を行う上で、まず味方につけたい概念が「Stack」です。
+SwiftUIにおいて、Stackは階層構造を提供するViewです。
 VStack, HStack, ZStackは、それぞれ 縦・横・階層構造のビューのスタックを提供します。
 
 ### ZStack：
-ZStackはビューを重ねて表示するためのスタックで、背後のアニメーションや背景の追加に便利です。
+ZStackはビューを重ねて表示するためのスタックで、イラストを描く際のレイヤー的に使用することができます。
 以下のコードをコピペして、実行してみてください。
+テキストが重なって配置されるはずです。
 ```swift
 import SwiftUI
 
@@ -41,6 +44,7 @@ struct ZStackDemoView: View {
 
 ### HStack：
 HStackは横方向にViewを並べます。
+以下は名前ラベルの横にテキストフィールドを配置した例です。
 ```swift
 import SwiftUI
 
@@ -71,6 +75,7 @@ struct HStackFormDemoView: View {
 
 ### VStack：
 VStack は縦方向にビューを並べるスタックです。
+下記の例ではテキストフィールドの下に送信ボタンを配置しています。
 ```swift
 import SwiftUI
 
@@ -119,7 +124,7 @@ struct HStackFormDemoView: View {
 - モディファイアとして付与するpadding
 - 余白の調整をするViewであるSpacer()
 
-spacingとSpacerは要素間の余白、paddingは対象物それ自体に付与する余白という、若干の性質の違いがあります。
+spacingとSpacerは要素間の余白、paddingは対象物それ自体に付与する余白と、若干の性質の違いがあります。
 詳細に確認していきましょう。
 
 ### spacing
