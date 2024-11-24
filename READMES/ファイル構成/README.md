@@ -2,9 +2,8 @@
 
 クローンしたプロジェクトを Xcode で Open し、基本的なファイル構成と設定ファイルについて確認していきましょう。
 
-## 初期ファイルの確認
+## 初期ファイルの確認(UIKit)
 
-**TODO: 下記の構成は UIKit でクリエイトした場合なので SwiftUI 用の解説は別で作る**  
 Xcode を立ち上げ、`Open Existing Project`を選択してください。  
 クローンした App ディレクトリから、`impl-swift-trainig.xcodeproj`を選択し、プロジェクトを Open します。
 
@@ -22,6 +21,7 @@ Xcode を立ち上げ、`Open Existing Project`を選択してください。
 
 ## AppDelegate.swift
 
+UIKit を使用する場合に生成されるファイルです。
 AppDelegate とは、アプリケーション(App)が実行すべきタスクを、代わりに具現する(Delegate)という意味です。  
 アプリケーションが実行すべきタスクとは、下記の様な処理があります。
 
@@ -36,6 +36,7 @@ AppDelegate とは、アプリケーション(App)が実行すべきタスクを
 
 ## SceneDelegate.swift
 
+UIKit を使用する場合に生成されるファイルです。
 iOS13 以降、iPadOS においてマルチウィンドウの概念が導入され、一つの画面の中に、2 つのアプリを分割して表示することが出来るようになりました。  
 マルチウィンドウに対応するため、Xcode11 から新規生成されたファイルで、UILifecycle に関する処理を実装するファイルです。  
 UILifecycle とは、下記の様な処理があります。
