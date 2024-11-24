@@ -11,14 +11,14 @@ func viewDidAppear(_ animated: Bool)
 
 を実装し、View が画面へ表示された後、UI をリフレッシュする処理を実装することで実現できます。
 
-公式のリファレンスをまとめています。　　
+公式のリファレンスをまとめています。  
 各コールバック関数で`print`を実装し、シュミレーターで動作とログを確認してください。
 
 ◾️ 課題
 
-画面 A にボタンを配置し、画面 B に遷移する処理を実装してください。　　
-その後、画面 A、B それぞれにライフサイクルイベントの何れかを実装し、動作を確認してください。　　
+画面 A にボタンを配置し、画面 B に遷移する処理を実装してください。  
+その後、画面 A、B それぞれにライフサイクルイベントの何れかを実装し、動作を確認してください。  
 (ex.`viewDidLoad()`と`viewWillAppear()`が実行されるタイミングを確認する)
 
-・[view の通知を処理する](https://developer.apple.com/documentation/uikit/uiviewcontroller#1652793)　　
+・[view の通知を処理する](https://developer.apple.com/documentation/uikit/uiviewcontroller#1652793)  
 ・[view イベントに応答する](https://developer.apple.com/documentation/uikit/uiviewcontroller#1653519)
