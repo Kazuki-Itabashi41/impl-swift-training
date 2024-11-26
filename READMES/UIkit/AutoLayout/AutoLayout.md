@@ -21,7 +21,7 @@ Interface Builder の使い方については、下記のセッションで解�
 
 完成イメージ
 
-![参考画像6](../../../RESOURCES/IMAGES/AutoLayout/AutoLayout-6.jpeg)
+![参考画像6](../../../assets//AutoLayout/AutoLayout-6.jpeg)
 
 Interface Builder を用いて、main.storyboard に実装してください。  
 コードベースで実装しても構いません。
@@ -34,28 +34,28 @@ Interface Builder を用いて、main.storyboard に実装してください。
 ・UILabel はの文字は中央揃えする  
 ・UIImageView と UILabel の隙間はあけない
 
-![参考画像1](../../../RESOURCES/IMAGES/AutoLayout/AutoLayout-1.jpeg)
+![参考画像1](../../../assets//AutoLayout/AutoLayout-1.jpeg)
 
 ◾️ ポイント 2  
 ・UIImageView の高さと幅は同じ
 
-![参考画像2](../../../RESOURCES/IMAGES/AutoLayout/AutoLayout-2.jpeg)
+![参考画像2](../../../assets//AutoLayout/AutoLayout-2.jpeg)
 
 ◾️ ポイント 3  
 UIImageView の水平中央は UIViewController の中央と同じ  
 UIImageView と UILabel を合わせた矩形の垂直中央は UIViewController の中央と同じ
 
-![参考画像3](../../../RESOURCES/IMAGES/AutoLayout/AutoLayout-3.jpeg)
+![参考画像3](../../../assets//AutoLayout/AutoLayout-3.jpeg)
 
 ◾️ ポイント 4  
 ・UIButton と UILabel の隙間は 80pt
 
-![参考画像4](../../../RESOURCES/IMAGES/AutoLayout/AutoLayout-4.jpeg)
+![参考画像4](../../../assets//AutoLayout/AutoLayout-4.jpeg)
 
 ◾️ ポイント 5  
 ・UIButton と UILabel の水平中央は同じ
 
-![参考画像5](../../../RESOURCES/IMAGES/AutoLayout/AutoLayout-5.jpeg)
+![参考画像5](../../../assets//AutoLayout/AutoLayout-5.jpeg)
 
 作成後、実際にビルドして画面を確認してみましょう。
 
