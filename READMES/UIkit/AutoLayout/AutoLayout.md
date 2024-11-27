@@ -26,7 +26,7 @@ Interface Builder の使い方については、下記のセッションで解�
 Interface Builder を用いて、main.storyboard に実装してください。  
 コードベースで実装しても構いません。
 
-◾️ ポイント１
+◾️ ポイント１  
 ・UIImageView の幅は UIViewController の幅の半分  
 ・青字の UILabel と赤字の UILabel の幅は UIImageView の半分  
 ・青字の UILabel の左端は、UIImageView の左端と一致  
